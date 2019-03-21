@@ -13,8 +13,6 @@ class App extends Component {
     }
   }
 
-
-  //Returns a string with the House name value and sets it in the state
   gettingHouse = () => {
     const houses = ['Gryffindor', 'Slytherin', 'Ravenclaw', 'Hufflepuff']
     let number = this.getRandomNumber(0, 3)
@@ -24,12 +22,10 @@ class App extends Component {
     })
   }
 
-  //Generates a random number in an specific range
   getRandomNumber = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  //Reseting to initial states for a new sorting
   resetState = () => {
     this.setState({
       house: '',
