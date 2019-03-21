@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header.js'
 import SortingHat from './components/SortingHat.js'
+import Houses from './components/Houses.js'
 import './App.css';
 
 class App extends Component {
@@ -42,6 +43,11 @@ class App extends Component {
         <Header />
         {!this.state.sorted &&
           <SortingHat gettingHouse={this.gettingHouse}/>
+        }
+        {this.state.sorted &&
+          <Houses 
+            resetState={this.resetState}
+            selectedHouse={this.state.house}/>
         }
       </div>
     );
