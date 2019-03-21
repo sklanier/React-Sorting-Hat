@@ -6,7 +6,7 @@ class Hat extends Component {
 		return (
 			<div>
 				<button onClick={this.props.gettingHouse}>
-					CLICK TO DO STUFF
+					CLICK TO SEE YOUR HOUSE
 				</button>
 			</div>
 		);

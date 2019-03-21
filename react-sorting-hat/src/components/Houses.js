@@ -4,25 +4,25 @@ import React, { Component } from 'react';
     {
       name: 'Gryffindor',
       traits: 'bravery, nerve, chivalry, courage, daring',
-      foundator: 'Godric Gryffindor',
+      founder: 'Godric Gryffindor',
       members: 'Harry Potter, Ron Weasley, Hermione Granger, Albus Dumbledor and Sirius Black.'
     },
     {
       name: 'Slytherin',
       traits: 'resourcelfulnnes, cunning, ambition, determination, self-preservation.',
-      foundator: 'Salazar Slytherin',
+      founder: 'Salazar Slytherin',
       members: 'Tom Riddle, Severus Snape, Bellatrix Lestrange, Draco Malfoy and Albus Severus Potter.'
     },
     {
       name: 'Ravenclaw',
       traits: 'intelligence, wit, wisdom, creativity, originality, individuality, acceptance.',
-      foundator: 'Rowena Ravenclaw',
+      founder: 'Rowena Ravenclaw',
       members: 'Luna Lovegood, Sybil Trelawney, Gilderoy Lockhart, Filius Flitwick and Cho Chang.'
     },
     {
       name: 'Hufflepuff',
       traits: 'dedication, hard work, fair play, patience, kindness, tolerance, unafraid of toil, loyalty.',
-      foundator: 'Helga Hufflepuff',
+      founder: 'Helga Hufflepuff',
       members: 'Nymphadora Tonks, Cedric Diggory, Pomona Sprout, Newton Scamander and Teddy Lupin.'
     }
   ]
@@ -33,7 +33,7 @@ class Houses extends Component {
     super(props)
     this.state = {
       traits: '',
-      foundator: '',
+      founder: '',
       members: ''
     }
   }
@@ -41,7 +41,7 @@ class Houses extends Component {
    const currentHouse = this.gettingHouse()
    this.setState({
     traits: currentHouse.traits,
-    foundator: currentHouse.foundator,
+    founder: currentHouse.founder,
     members: currentHouse.members
    })
   }
